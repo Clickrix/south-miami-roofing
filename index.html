@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>South Miami Roofing | Roofing Company in Miami, FL</title>
+<meta name="description" content="South Miami Roofing — Miami's trusted roofing company. Re-roofs, roof repair & maintenance for metal, tile, flat & shingle roofs. Limited lifetime warranty.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0f172a;
+  --bg2: #1e293b;
+  --ink: #0f172a;
+  --paper: #f8fafc;
+  --accent: #b45309;
+  --accent-d: #92400e;
+  --line: #e2e8f0;
+  --muted: #64748b;
+  --maxw: 1140px;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { font-family:'Inter',system-ui,sans-serif; color:#1e293b; background:#fff; line-height:1.65; -webkit-font-smoothing:antialiased; }
+h1,h2,h3 { font-family:'Archivo',sans-serif; line-height:1.15; letter-spacing:-0.02em; }
+img { max-width:100%; }
+a { text-decoration:none; }
+.wrap { max-width:var(--maxw); margin:0 auto; padding:0 22px; }
+/* NAV */
+.nav { position:sticky; top:0; z-index:50; background:rgba(255,255,255,.97); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+.nav-in { display:flex; align-items:center; justify-content:space-between; height:68px; }
+.brand { font-family:'Archivo',sans-serif; font-weight:800; font-size:1.15rem; color:var(--ink); }
+.brand span { color:var(--accent); }
+.nav-links { display:flex; gap:26px; align-items:center; }
+.nav-links a { color:#334155; font-weight:500; font-size:.95rem; }
+.nav-links a:hover { color:var(--accent); }
+.btn { display:inline-block; background:var(--accent); color:#fff; font-weight:700; padding:14px 30px; border-radius:10px; font-size:1rem; transition:transform .15s, box-shadow .15s; border:none; cursor:pointer; }
+.btn:hover { background:var(--accent-d); transform:translateY(-2px); box-shadow:0 10px 24px rgba(0,0,0,.18); }
+.btn-sm { padding:10px 20px; font-size:.9rem; }
+.btn-outline { background:transparent; border:2px solid rgba(255,255,255,.85); color:#fff; }
+.btn-outline:hover { background:rgba(255,255,255,.12); }
+.burger { display:none; background:none; border:none; font-size:1.6rem; cursor:pointer; color:var(--ink); }
+/* HERO */
+.hero { background:linear-gradient(135deg, #1c1917 0%, #78350f 100%); color:#fff; padding:96px 0 88px; position:relative; overflow:hidden; }
+.hero::after { content:""; position:absolute; inset:0; background:radial-gradient(ellipse at 80% 10%, rgba(255,255,255,.14), transparent 55%); pointer-events:none; }
+.hero .wrap { position:relative; z-index:1; }
+.kicker { display:inline-block; background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.3); padding:7px 16px; border-radius:999px; font-size:.82rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; margin-bottom:20px; }
+.hero h1 { font-size:clamp(2.1rem, 5.2vw, 3.6rem); font-weight:800; max-width:720px; margin-bottom:18px; }
+.hero p.lead { font-size:1.15rem; max-width:640px; opacity:.94; margin-bottom:34px; }
+.hero-cta { display:flex; gap:14px; flex-wrap:wrap; }
+.hero-note { margin-top:22px; font-size:.9rem; opacity:.85; }
+/* TRUST */
+.trust { background:#fff; border-bottom:1px solid var(--line); }
+.trust-in { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; padding:26px 0; }
+.trust-item { display:flex; gap:12px; align-items:flex-start; }
+.trust-ico { flex:0 0 40px; width:40px; height:40px; border-radius:10px; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:1.1rem; }
+.trust-item b { display:block; font-size:.95rem; }
+.trust-item small { color:var(--muted); font-size:.84rem; }
+/* SECTIONS */
+section.block { padding:76px 0; }
+.eyebrow { color:var(--accent); font-weight:700; font-size:.82rem; letter-spacing:.12em; text-transform:uppercase; margin-bottom:12px; }
+h2.sec { font-size:clamp(1.6rem,3.4vw,2.4rem); font-weight:800; color:var(--ink); margin-bottom:14px; }
+p.sec-sub { color:var(--muted); max-width:680px; margin-bottom:40px; font-size:1.05rem; }
+.alt { background:var(--paper); }
+/* SERVICES */
+.svc-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+.svc { background:#fff; border:1px solid var(--line); border-radius:16px; padding:30px 26px; transition:transform .18s, box-shadow .18s; }
+.svc:hover { transform:translateY(-5px); box-shadow:0 18px 40px rgba(2,6,23,.10); }
+.svc-ico { width:52px; height:52px; border-radius:13px; background:linear-gradient(135deg,var(--accent),var(--accent-d)); color:#fff; display:flex; align-items:center; justify-content:center; font-size:1.5rem; margin-bottom:18px; }
+.svc h3 { font-size:1.15rem; margin-bottom:10px; color:var(--ink); }
+.svc p { color:var(--muted); font-size:.95rem; }
+/* ABOUT */
+.about-grid { display:grid; grid-template-columns:1.05fr .95fr; gap:54px; align-items:center; }
+.about-grid h2 { margin-bottom:16px; }
+.about-grid p { color:#475569; margin-bottom:16px; }
+.check { display:flex; gap:10px; align-items:flex-start; margin-bottom:12px; }
+.check .tick { flex:0 0 24px; width:24px; height:24px; border-radius:50%; background:var(--accent); color:#fff; font-weight:700; display:flex; align-items:center; justify-content:center; font-size:.8rem; margin-top:2px; }
+.stat-row { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:28px; }
+.stat { text-align:center; background:#fff; border:1px solid var(--line); border-radius:14px; padding:20px 10px; }
+.stat b { display:block; font-family:'Archivo',sans-serif; font-size:1.7rem; color:var(--accent); }
+.stat small { color:var(--muted); font-size:.85rem; }
+/* STEPS */
+.steps { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; counter-reset:step; }
+.step { background:#fff; border:1px solid var(--line); border-radius:16px; padding:30px 26px; position:relative; }
+.step::before { counter-increment:step; content:counter(step); position:absolute; top:-18px; left:26px; width:38px; height:38px; border-radius:50%; background:var(--accent); color:#fff; font-family:'Archivo',sans-serif; font-weight:800; display:flex; align-items:center; justify-content:center; }
+.step h3 { margin:8px 0 10px; color:var(--ink); }
+.step p { color:var(--muted); font-size:.95rem; }
+/* PROOF */
+.proof-banner { background:linear-gradient(135deg,var(--accent),var(--accent-d)); color:#fff; border-radius:20px; padding:52px 46px; display:flex; align-items:center; justify-content:space-between; gap:30px; flex-wrap:wrap; }
+.proof-banner h2 { color:#fff; margin-bottom:10px; font-size:1.8rem; }
+.proof-banner p { opacity:.94; max-width:560px; }
+/* CONTACT */
+.contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; }
+.contact-card { background:var(--paper); border:1px solid var(--line); border-radius:18px; padding:38px; }
+.contact-card h3 { margin-bottom:18px; color:var(--ink); }
+.c-row { display:flex; gap:14px; align-items:center; margin-bottom:18px; }
+.c-ico { flex:0 0 46px; width:46px; height:46px; border-radius:12px; background:#fff; border:1px solid var(--line); display:flex; align-items:center; justify-content:center; font-size:1.25rem; }
+.c-row b { display:block; font-size:.82rem; color:var(--muted); text-transform:uppercase; letter-spacing:.08em; }
+.c-row a, .c-row span.v { color:var(--ink); font-weight:600; font-size:1.05rem; }
+.c-row a:hover { color:var(--accent); }
+.contact-cta { display:flex; flex-direction:column; justify-content:center; }
+.contact-cta .btn { margin-bottom:12px; text-align:center; }
+/* FOOTER */
+footer { background:var(--bg); color:#cbd5e1; padding:44px 0 30px; }
+.foot-in { display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap; align-items:center; }
+footer .brand { color:#fff; }
+.foot-note { font-size:.85rem; color:#94a3b8; margin-top:18px; padding-top:18px; border-top:1px solid rgba(255,255,255,.1); }
+/* REVEAL */
+.rv { opacity:0; transform:translateY(26px); transition:opacity .6s ease, transform .6s ease; }
+.rv.in { opacity:1; transform:none; }
+/* RESPONSIVE */
+@media (max-width:900px) {
+  .svc-grid { grid-template-columns:repeat(2,1fr); }
+  .trust-in { grid-template-columns:repeat(2,1fr); }
+  .about-grid, .contact-grid { grid-template-columns:1fr; }
+  .steps { grid-template-columns:1fr; }
+}
+@media (max-width:640px) {
+  .nav-links { display:none; position:absolute; top:68px; left:0; right:0; background:#fff; flex-direction:column; align-items:stretch; padding:14px 22px 20px; border-bottom:1px solid var(--line); gap:4px; }
+  .nav-links.open { display:flex; }
+  .nav-links a { padding:10px 0; border-bottom:1px solid #f1f5f9; }
+  .burger { display:block; }
+  .svc-grid { grid-template-columns:1fr; }
+  section.block { padding:56px 0; }
+  .hero { padding:70px 0 64px; }
+  .proof-banner { padding:36px 26px; }
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="brand">South Miami <span>Roofing</span></a>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#process">How It Works</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:+13059107388" class="btn btn-sm">Call Now</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <span class="kicker">Miami, Florida · Lifetime Warranty</span>
+    <h1>South Florida's Trusted Roof for Homes & Businesses</h1>
+    <p class="lead">Re-roofs, repairs, and maintenance for metal, tile, flat, and shingle roofs — backed by a limited lifetime warranty and guarantees you can count on.</p>
+    <div class="hero-cta">
+      <a class="btn" href="tel:+13059107388">📞 Call (305) 910-7388</a>
+      <a class="btn btn-outline" href="#contact">Request an Estimate</a>
+    </div>
+    <p class="hero-note">Limited lifetime warranty on all products · Most work from referrals</p>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap trust-in">
+    <div class="trust-item"><div class="trust-ico">🛡️</div><div><b>Lifetime Warranty</b><small>Limited lifetime product warranty</small></div></div>
+    <div class="trust-item"><div class="trust-ico">🏠</div><div><b>All Roof Types</b><small>Metal, tile, flat & shingle</small></div></div>
+    <div class="trust-item"><div class="trust-ico">♥</div><div><b>Referral Driven</b><small>Most work from happy customers</small></div></div>
+    <div class="trust-item"><div class="trust-ico">★</div><div><b>5 Guarantees</b><small>Value, no-risk & accountability</small></div></div>
+  </div>
+</div>
+
+<section class="block alt" id="services">
+  <div class="wrap">
+    <p class="eyebrow rv">What We Do</p>
+    <h2 class="sec rv">Roofing for Every Property</h2>
+    <p class="sec-sub rv">Residential, commercial, and industrial roofing — one team for re-roofs, repairs, and maintenance.</p>
+    <div class="svc-grid">
+      <div class="svc rv"><div class="svc-ico">🏠</div><h3>Re-Roofing</h3><p>Complete tear-offs and replacements in metal, tile, flat, or shingle — sturdy, resilient, and built to last.</p></div>
+      <div class="svc rv"><div class="svc-ico">🔧</div><h3>Roof Repair</h3><p>Routine and urgent repairs handled by an experienced team that gets every roof sturdy again.</p></div>
+      <div class="svc rv"><div class="svc-ico">🏡</div><h3>Residential Roofing</h3><p>From cozy cottages to sprawling estates — roofing tailored to your home's style and lasting security.</p></div>
+      <div class="svc rv"><div class="svc-ico">🏢</div><h3>Commercial Roofing</h3><p>Functional, durable, visually appealing roofs that give your business a professional, confident facade.</p></div>
+      <div class="svc rv"><div class="svc-ico">🏭</div><h3>Industrial Roofing</h3><p>Robust systems that withstand heavy machinery, frequent movement, and rigorous industrial demands.</p></div>
+      <div class="svc rv"><div class="svc-ico">🔍</div><h3>Roof Maintenance</h3><p>Preventive care and inspections that protect your investment and avoid costly surprises.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="about">
+  <div class="wrap about-grid">
+    <div class="rv">
+      <p class="eyebrow">About Us</p>
+      <h2 class="sec">The Premier Choice in Miami</h2>
+      <p>South Miami Roofing is Miami's go-to roofing company for re-roofs, roof repairs, and maintenance across metal, tile, flat, and shingle systems.</p><p>We stand behind our work with real guarantees: best value for your investment, no-risk satisfaction, direct accountability to our leadership, work done right the first time, and comprehensive roof assurance on materials and workmanship.</p>
+    </div>
+    <div class="rv">
+      <div class="stat-row">
+        <div class="stat"><b>5</b><small>Service guarantees</small></div>
+        <div class="stat"><b>3</b><small>Property types served</small></div>
+        <div class="stat"><b>★</b><small>Lifetime warranty</small></div>
+      </div>
+      <div style="margin-top:22px;">
+        <div class="check"><span class="tick">✓</span><span>Lowest-investment guarantee: best value without cutting quality</span></div>
+        <div class="check"><span class="tick">✓</span><span>No-risk guarantee: if you're not satisfied, we make it right</span></div>
+        <div class="check"><span class="tick">✓</span><span>Invest-once & roof assurance: built to endure, fully covered</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="process">
+  <div class="wrap">
+    <p class="eyebrow rv">Simple &amp; Stress-Free</p>
+    <h2 class="sec rv">How It Works</h2>
+    <p class="sec-sub rv">Getting a better roof shouldn't be complicated. Here's exactly what to expect when you work with us.</p>
+    <div class="steps">
+      <div class="step rv"><h3>Free Inspection</h3><p>Call or reach out online and we'll schedule a free, no-pressure roof inspection at a time that works for you.</p></div>
+      <div class="step rv"><h3>Clear, Honest Quote</h3><p>You'll get a written quote that spells out materials, timeline, and price — no surprises, no upsells you don't need.</p></div>
+      <div class="step rv"><h3>Expert Installation</h3><p>Our crew installs your new roof cleanly and quickly, with a thorough cleanup and final walkthrough when we're done.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="proof-banner rv">
+      <div>
+        <h2>Most of Our Work Comes from Referrals</h2>
+        <p>Smiles from our customers can't be wrong. When your neighbors need a roofer they trust, they call South Miami Roofing — and then they tell their friends.</p>
+      </div>
+      <a class="btn btn-outline" href="tel:+13059107388">📞 Call (305) 910-7388</a>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="contact">
+  <div class="wrap">
+    <p class="eyebrow rv">Get In Touch</p>
+    <h2 class="sec rv">Get Your Free Roof Inspection</h2>
+    <p class="sec-sub rv">One call is all it takes. Tell us what's going on with your roof and we'll take it from there.</p>
+    <div class="contact-grid">
+      <div class="contact-card rv">
+        <h3>Contact Information</h3>
+        <div class="c-row"><div class="c-ico">📞</div><div><b>Call Us</b><a href="tel:+13059107388">(305) 910-7388</a></div></div>
+        <div class="c-row"><div class="c-ico">📞</div><div><b>Call Us</b><a href="tel:+13052420039">(305) 242-0039</a></div></div>
+        <div class="c-row"><div class="c-ico">📍</div><div><b>Location</b><span class="v">6332 NW 72nd Ave, Miami, FL 33166</span></div></div>
+        <div class="c-row"><div class="c-ico">🕒</div><div><b>Hours</b><span class="v">Mon–Fri · 8am–6pm</span></div></div>
+      </div>
+      <div class="contact-cta rv">
+        <a class="btn" href="tel:+13059107388">📞 Call (305) 910-7388</a>
+        <a class="btn btn-outline" style="background:transparent;color:var(--accent);border-color:var(--accent);" href="#contact">Request an Estimate ↓</a>
+        <p style="color:var(--muted); font-size:.92rem;">Prefer a message? Use the <b>contact form on our website</b> and we'll get back to you promptly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-in">
+      <a href="#top" class="brand">South Miami <span>Roofing</span></a>
+      <div style="display:flex; gap:22px; font-size:.92rem;">
+        <a href="#services" style="color:#cbd5e1;">Services</a>
+        <a href="#about" style="color:#cbd5e1;">About</a>
+        <a href="#contact" style="color:#cbd5e1;">Contact</a>
+      </div>
+    </div>
+    <p class="foot-note">© 2026 South Miami Roofing. All rights reserved. Serving Miami, South Miami & the surrounding South Florida area.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById('burger'), n=document.getElementById('navLinks');
+  b.addEventListener('click',function(){ n.classList.toggle('open'); });
+  n.addEventListener('click',function(e){ if(e.target.tagName==='A') n.classList.remove('open'); });
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var o=new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); o.unobserve(en.target); } }); },{threshold:.12});
+    els.forEach(function(e){ o.observe(e); });
+  } else { els.forEach(function(e){ e.classList.add('in'); }); }
+})();
+</script>
+</body>
+</html>
